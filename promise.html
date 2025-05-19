@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- 
+       promise
+    -->
+<!-- <h1 id="title">hi</h1> -->
+
+    <div class="container-fluid ">
+
+        <div class="row p-5" id="responselist">
+             
+        </div>
+    </div>
+
+
+
+
+    <script>
+        //      let promise1 =    new Promise((resolve, reject)=>{
+
+        //             let isticketbook = true;
+        //             if(isticketbook){
+        //                 resolve("We will go to the movie show");
+        //             }else{
+        //                 reject("veetuku poo!!!")
+        //             }
+
+        //         });
+
+
+        // promise1.then((success)=>{
+        //         console.log(success);
+        // }).catch((error)=>{
+        //         console.log(error);
+        // });
+        //https://dummy-json.mock.beeceptor.com/posts
+
+        fetch("https://dummy-json.mock.beeceptor.com/posts").then((success) => {
+
+            success.json().then((data) => {
+
+                console.log(data)
+                let successData = data;
+                let cardDesign='';
+                // console.log(successData)
+                successData.forEach(element => {
+                    // console.log(element.title)
+
+                     cardDesign+= `
+                     <div class="card m-2 col-lg-3 bg-success">
+                        <h3>${element.title}</h3>
+                        <p>${element.body}</p>
+                        <button class="btn btn-primary">Comment <span>${element.comment_count}</span></button>
+                    </div> 
+                    `;
+
+                    console.log(cardDesign)
+                });
+
+                let rs = document.querySelector("#responselist");
+
+                rs.innerHTML = cardDesign;
+
+            }).catch((error) => {
+                console.log(error)
+            })
+
+        }).catch((error) => console.log(error))
+
+    </script>
+
+</body>
+
+</html>
