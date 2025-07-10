@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Savate:ital,wght@0,200..900;1,200..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: "Savate", sans-serif;
+}
+
+header {
+    /* border: 2px solid; */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 2%;
+    background: palevioletred;
+        box-shadow: 1px 4px 17px 7px #838783;
+        position: fixed;
+        width: 100%;
+        z-index: 99;
+        top:0;
+}
+
+header .logo {
+    /* border: 2px solid red; */
+    font-size: 32px;
+    align-self: center;
+}
+
+nav {
+    /* border: 2px solid green; */
+}
+
+nav>a {
+    margin-right: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header .sidemenu {
+    /* border: 2px solid blue; */
+}
+
+header .sidemenu i {
+    margin-right: 30px;
+}
+
+/* end of header */
+
+/* start the product-container */
+
+.product-container {
+    /* border: 2px solid; */
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-container .box {
+    border: 2px solid red;
+
+    width: 350px;
+    height: 380px;
+}
+
+.product-container .box .img-box {
+    border: 2px solid;
+    height: 300px;
+    position: relative;
+}
+
+.product-container .box .img-box span{
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  right: 10px;
+  top: 5px;
+}
+
+.product-container .box .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.product-container .box .footer {
+    /* border: 2px solid; */
+    text-align: center;
+}
+
+.product-container .box .footer p::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 5px;
+    background: darkmagenta;
+    margin: 0 auto;
+    transition: 3s;
+
+}
+
+.product-container .box .footer p:hover::after {
+    width: 100px;
+    transition: 3s;
+}
+
+.product-container .box .footer button {
+    border: 2px solid green;
+    padding: 5px 15px;
+
+    border-radius: 10px;
+}
+
+.product-container .box .footer button:hover {
+    background: darkcyan;
+    color: white;
+}
