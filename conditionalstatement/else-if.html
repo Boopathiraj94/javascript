@@ -54,46 +54,126 @@
   4)
     
 
+   switch case
+   ============
+
+   
+   switch(expression){
+        case value1:
+                // block of code
+                break;
+        case value2:
+                //block of code
+                break;
+        case value3:
+                //block of code
+                break;
+        default:
+                //block of code default
+                break;
+   }
+
+   // case 1 => addition calculation
+    // case 2 => substraction calculation
+    // case 3 => multiplication calculation
+    // case 4 => divition calculation
+     // case 5 => modulo calculation 
+     
+     case a => (a+b) (a-b)
+     case b => 1/2* pi *r*r => pi=> 3.14
+     case c => pi *r*r
+     case d => x*x+y*y+2*x*y
+     
+
+
+
+
 -->
     <script>
 
-//         let a,b,c;
-// a=5,b=7;c=2; // assign
-// const num=a+b+c;  // num = 5+7+2 => num = 14
-// let ans=2+num; // ans = 2+14 => ans = 16
-// ans++; // 16++
-// ans=--ans; // --17 => 16 => ans = 16
-// a++; // 5++
-// ans=a++; // 6++
-// console.log(ans);
+        let op = prompt("a. addition \n b. subs \n c. mul");
+        // op = number()
+        //   op = string()
 
-let a = 10;
-let b = 5;
+        //  op= Number(op) // reassign
+        // debugger;
+        switch (op) {
+            case "a":
+                let num1 = Number(prompt("enter first num"))
+                let num2 = Number(prompt("enter second num"))
+                let add_ans = num1 + num2;
+                alert("addition answer = " + add_ans)
 
-a = a++; // 10++
-b = b++;
+                break;
+            case "b":
+                let num3 = Number(prompt("enter first num"))
+                let num4 = Number(prompt("enter second num"))
+                let sub_ans = num3 - num4;
+                alert("substraction answer = " + sub_ans)
+                break;
+            // case "c":
+            //     alert("tuesday")
+            //     break;
+            // case 4:
+            //     alert("wednesday")
+            //     break;
+            // case 5:
+            //     alert("thursday")
+            //     break;
+            // case 6:
+            //     alert("Friday")
+            //     break;
+            // case 7:
+            //     alert("saturday")
+            //     break;
+            default:
+                alert("invalid options")
+                break;
+        }
 
-a = a+b
+
+        //         let a,b,c;
+        // a=5,b=7;c=2; // assign
+        // const num=a+b+c;  // num = 5+7+2 => num = 14
+        // let ans=2+num; // ans = 2+14 => ans = 16
+        // ans++; // 16++
+        // ans=--ans; // --17 => 16 => ans = 16
+        // a++; // 5++
+        // ans=a++; // 6++
+        // console.log(ans);
+
+        // let a = 10;
+        // let b = 5;
+
+        // a = a++; // 10++
+        // b = b++;
+
+        // a = a+b
 
 
-//         let o_uname ="admin";
-//         let o_pass = "admin@123";
+        // let o_uname = "admin";
+        // let o_pass = "admin@123";
 
-//         let username = prompt("enter username");
-//         let password = prompt("enter password");
-// debugger;
-//         if(o_uname === username){
-            
-//             if(o_pass === password){
-//                     alert("Login successfully")
-//             }else{
-//                 alert("Password is wrong")
-//             }
+        // let username = prompt("enter username");
+        // let password = prompt("enter password");
+        // debugger;
+        // if (o_uname === username) { // admin === "dhina"
 
-//         }else{
-//             alert("you enter wrong username")
-//         }
-        
+        //     if (o_pass === password) {
+        //         alert("Login successfully")
+        //     } else {
+        //         alert("Password is wrong")
+        //     }
+
+        // } else {
+        //     if (username == "") {
+        //         alert("Empty username is not allowed")
+        //     } else {
+        //         alert("you enter wrong username")
+        //     }
+
+        // }
+
         // username == ""
 
 
