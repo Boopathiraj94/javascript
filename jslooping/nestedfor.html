@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <!-- 
+    Nested for
+    =========
+        c1  c2   c3  c4
+   r1 => *  *    *   *
+   r2 => *  *    *   *
+   r3 => *  *    *   *
+   r4 => *  *    *   *
+
+  Syntax:
+  ======
+    for(init;condition;in/dec){ // row
+
+        for(init;condition;in/dec){ // column
+        
+        }
+    }
+
+1)  *
+    * *
+    * * *
+    * * * *
+    * * * * *
+
+2)  * * * * *
+    * * * *
+    * * *
+    * *
+    *
+3)  1
+    1 2
+    1 2 3
+    1 2 3 4
+    1 2 3 4 5
+
+ 4) 1 2 3 4 5
+    1 2 3 4
+    1 2 3 
+    1 2
+    1
+5)  K
+    k K
+    K K K
+    K K K K
+    K K K K K
+ 
+6)  1
+    1 2
+    1 2 3
+    1 2 3 4
+    1 2 3 4 5
+    1 2 3 4 5
+    1 2 3 4
+    1 2 3 
+    1 2
+    1
+ 
+7)    *
+    * * *   
+  * * * * *
+ * * * * * *   
+
+
+    -->
+
+    <script>
+        // for(let i =1;i<=4;i++){ // row
+        //     for(let j=1;j<=4;j++){ // column
+        //         // document.writeln("c",j,",*")
+        //         document.writeln(" ")
+        //     }
+        //     document.writeln(i,"row<br> ")
+        // }
+
+        // debugger;
+        for(let i =1;i<=5;i++){
+            for(let j=1;j<=i;j++){
+                // document.writeln(j)
+                document.writeln(j)
+            }
+            document.writeln("<br>")
+        }
+        
+    </script>
+</body>
+</html>
