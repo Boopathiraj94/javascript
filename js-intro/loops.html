@@ -42,17 +42,55 @@
                 } 
           } 
 
+          1
+          0
+          1
+          0
+          1
+          0
       
     -->
     <script>
-        debugger;
-        for(let i = 1;i <=5; i++){ // row
+
+        //  for(let i =1;i<=10;i++){
+        //     //    let temp =  (i%2) ? "E" : "O"
+        //     //  ternary operator   () ? true : else 
+        //     let temp =    (i%2) ? 1 : 0 ;
+        //     document.writeln(temp,"<br>")
+        //     // if(i%2){ // 1 => true , 0 => false
+        //     //      document.writeln("1","<br>")
+        //     // }else{
+        //     //      document.writeln("0","<br>")
+        //     // }
            
-            for(let j = 1; j<=i;j++){ // column
-                document.writeln(j)
+        //  }
+
+        for(let i = 1;i <= 5;i++){
+            for(let j=1;j<=6-i;j++){
+                document.writeln("&nbsp;&nbsp;")
+            }
+           let dhina = (i*2)-1;
+            for(let k=1;k<=dhina;k++){
+                document.writeln("*")
             }
             document.writeln("<br>")
         }
+
+//   i  =1 
+//  j 
+//   1
+//   1 2
+//   1 2 3
+
+
+        // debugger;
+        // for(let i = 1;i <=5; i++){ // row
+           
+        //     for(let j = 1; j<=i;j++){ // column
+        //         document.writeln(j)
+        //     }
+        //     document.writeln("<br>")
+        // }
 
         // for(let a = 1;a<=10;a = a +1){
         //     // console.log(a)

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 
+    Syntax:
+    =======
+    function functionName(){
+            //block of code
+    }
+
+    let ex;
+    switch(ex){
+        case "1":
+                //block of code
+                break;
+        case "2":
+                //block of code
+                break;
+        default:
+               //block of code
+               break; 
+    }
+
+    -->
+
+    <script>
+
+        function add(a,b){
+            return a+b;
+        }
+
+        function subs(a,b){
+            return a-b;
+        }
+
+        let ex = prompt("Enter your Case 1. addition , 2.substration,");
+        let fr = prompt("Enter first number?")
+         let se = prompt("Enter second number?")
+        switch(ex){
+            case "1":
+                   let ans =  add( Number(fr), Number(se))
+                    console.log(ans)
+                    break;
+            case "2":
+                   let ans1 =  subs(fr,se)
+                   console.log(ans1)
+                    break;
+            default:
+                    console.log("invalid case number")
+                    break;
+
+        }
+
+
+
+
+        // for(let i =1;i<=10;i++){
+
+        //     debugger;
+        //     // if(i == 5){ //true
+        //     //     continue;
+        //     // }
+        //     continue;
+        //     console.log(i)
+
+        // }
+
+        // debugger;
+        // function electrian() {
+        //     document.writeln("electrian work..")
+        // }
+
+        // function Denish() {
+        //     document.writeln(5+5)
+        // }
+
+        //   add(6,4)
+        // parameter function
+        // function add(a,b){
+        //     document.writeln(a+b)
+        //     // document.writeln(a-b)
+        //     // document.writeln(a*b)
+        //     // document.writeln(a/b)
+        // }
+        // add(6,4); // calling
+        // let a;
+        // console.log(a)
+      
+
+        // retrun function
+// let ans;
+//         function kabilesh(raja,denish){
+//             let ans = raja-denish;
+//            return ans;
+//         }
+
+//         ans=  kabilesh(10,20)
+//        document.writeln(ans)
+
+
+        // add(6,4)// invoke or call
+        // add(10,4)// invoke or call
+        // add(10,14)// invoke or call  
+        // electrian()
+        
+    </script>
+</body>
+
+</html>
