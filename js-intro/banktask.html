@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>IndianBank</h1>
+
+    <script>
+// alt +z => wrap content
+
+let exit = true;
+let name,age,phone,amount;
+    while(exit){
+        let op = prompt("Enter your option \n 1. account open \n 2.show details \n 3. deposit \n 4. withdraw \n 5.Exit")
+
+        // string => number
+ 
+ 
+        switch(op){
+
+             case "1":
+                  name =prompt("enter your Name?")
+                  age =prompt("enter your age?")
+                  phone =prompt("enter your phone?")
+                  amount =prompt("Initial Amount?")
+                  
+                 console.log("account has been activated!!..")
+                
+                 break;
+             case "2":
+                 console.log("Your Name: ",name)
+                console.log("Your age: ",age)
+                console.log("Your phone: ",phone)
+                console.log("Your amount: ",amount)
+                break;
+             case "3":
+                exit = false;
+                break;
+            default:
+                console.log("Invalid option")
+                break;
+        }
+
+    }
+
+    </script>
+</body>
+</html>
