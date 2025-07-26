@@ -27,7 +27,7 @@ let name,age,phone,amount;
                   age =prompt("enter your age?")
                   phone =prompt("enter your phone?")
                   amount =prompt("Initial Amount?")
-                  
+                   amount = parseFloat(amount);
                  console.log("account has been activated!!..")
                 
                  break;
@@ -37,7 +37,17 @@ let name,age,phone,amount;
                 console.log("Your phone: ",phone)
                 console.log("Your amount: ",amount)
                 break;
-             case "3":
+            case "3":
+                   let damount =  prompt("Enter your Deposite Amount?");
+                      damount= parseFloat(damount);
+                    amount =  amount + damount;
+
+                    console.log("Amount has been Deposited. Total=",amount)
+                break;
+             case "4":
+                  prompt("Account Balance is = "+ amount +" Enter your withdraw amount?");
+                  break;
+             case "5":
                 exit = false;
                 break;
             default:
