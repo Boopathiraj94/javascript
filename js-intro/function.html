@@ -135,6 +135,88 @@
     //    (function(){
     //         console.log("I am IIFE")
     //     })()
+
+    // callback function
+
+    /*
+        //parameter function
+        function add(callback){
+             a+b;
+            callback()
+        } 
+       function total(){
+          //block of code
+       } 
+        add(total)
+
+
+    */
+
+    //  function add(a,b,avg){
+    //      console.log("add function a+b => ",a+b);
+    //      let totalmark = a+b;
+    //     avg(totalmark)
+    //  }
+
+    //  function avg(mark){
+    //     console.log("avg: ",(mark/2))
+    //  } 
+    // add(4,5,avg)
+    // console.log(ans)
+    /*
+    
+    closure
+    ========
+     function outerFun(){
+     
+        function inFun1(){
+
+        }
+
+        function inFun2(){
+
+        }
+
+
+        inFun1()
+        inFun2()
+     }
+    
+    outerFun()
+
+    */
+
+//     function outFunc(){
+
+//         function inFunc1(){
+//             console.log("inFunction 1 calling")
+//         }
+
+//         function inFunc2(n1,n2,n3){
+//             console.log("inFunction 2 calling",n1,n2,n3)
+//         }
+
+//         function add(){
+//             return 10+20;
+//         }
+
+//          function mul(){
+//             return 10*20;
+//         }
+
+//         let additionAns = add()
+//         console.log("additionAns : ",additionAns)
+//         let mulAns = mul()
+//         console.log("mulAns : ",mulAns)
+
+//         inFunc1()
+//         inFunc2('Surendhar','dinesh','Arula')
+//         console.log("outer funcion calling1...")
+
+//         return [additionAns,mulAns];
+//     }
+     
+//    document.writeln(outFunc())
     </script>
 </body>
 
