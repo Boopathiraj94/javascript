@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Pattern</h1>
+
+    <!-- 
+    
+    Boolean =>
+    1 => true
+    0 => false
+    
+    
+    if(i%2) => if(1) if(0){
+    
+    }
+
+   
+    -->
+
+    <script>
+        
+        // for(let i=1;i<=10;i++){
+        // //   let temp =   (i%2) ? "surendhar" : "Boopathi";
+        // // debugger;
+        // // let temp;
+
+        //     if(i%2){
+        //         temp = "surendhar";
+        //     }else{
+        //         temp = "boopathi"
+        //     }
+        // document.writeln(temp,"<br>")
+        // }
+
+        // for(let i =5;i>=1;i--){
+        //     document.writeln(i)
+        // }
+/*
+     
+        1 2 3 4 5
+        1 2 3 4 5
+        1 2 3 4 5
+        1 2 3 4 5
+        1 2 3 4 5
+
+        1 1 1 1 1
+        0 0 0 0 0
+        1 1 1 1 1
+        0 0 0 0 0
+        1 1 1 1 1
+
+        1 0 1 0 1
+        1 0 1 0 1
+        1 0 1 0 1
+        1 0 1 0 1
+        1 0 1 0 1
+
+
+        1 
+        1 2 
+        1 2 3 
+        1 2 3 4 
+        1 2 3 4 5
+
+        1
+        2 2
+        3 3 3 
+        4 4 4 4
+        5 5 5 5 5
+
+        5 4 3 2 1
+        5 4 3 2 1
+        5 4 3 2 1
+        5 4 3 2 1
+        5 4 3 2 1
+
+        5 5 5 5 5 
+        4 4 4 4 4
+        3 3 3 3 3 
+        2 2 2 2 2
+        1 1 1 1 1 
+
+        5
+        4 4
+        3 3 3
+        2 2 2 2 
+        1 1 1 1 1
+
+        5
+        5 4
+        5 4 3
+        5 4 3 2
+        5 4 3 2 1
+
+
+        5 4 3 2 1
+        5 4 3 2 1
+        5 4 3 2 1
+        5 4 3 2 1
+        5 4 3 2 1
+
+                5
+              4 5
+            3 4 5
+          2 3 4 5
+        1 2 3 4 5 
+        
+        * * * * * 
+        * * * * * 
+        * * * * * 
+        * * * * * 
+        * * * * * 
+        
+        * * * * *
+        *
+        * * * * *
+                *
+        * * * * *
+
+        1 2 3 4 5
+        1
+        1 2 3 4 5
+                5
+        1 2 3 4 5
+
+
+        
+
+*/
+
+    for(let i =1;i<=5;i++){
+        for(let j=1;j<=5;j++){
+            if((i==1 && j!=3)||(i ==2 && j != 2 && j!=3) ||(i==3 && j!=3) ||(i==4 && j !=3)){
+                 document.writeln("&nbsp;&nbsp;")
+            }
+            else{
+                 document.writeln("*")  
+            }
+         
+        }
+        document.writeln("<br>")
+    }
+
+    //=================== Task 2 ===================
+
+    for(let i =1;i<=5;i++){
+        for(let j=1;j<=5;j++){
+            if((i==2 && j!=5 && j!=1)||(i ==4 && j !=5)){
+                 document.writeln("&nbsp;&nbsp;")
+            }
+            else{
+                 document.writeln("*")  
+            }
+         
+        }
+        document.writeln("<br>")
+    }
+
+  
+//=======================================================   
+
+
+        // for(let i = 5;i>=1;i--){ // row
+
+        //     for(let j = 5;j>=6-i;j--){
+        //         document.writeln(j)
+        //     }
+        //     // document.writeln(i)
+        //     // for(let k=i;k<=5;k++){
+        //     //    document.writeln(i) 
+        //     // }
+
+        //     // for(let j=5;j>=i;j--){ //column
+        //     //     // debugger;
+        //     // //    let s = (j%2) ? 1 : 0;
+        //     //   document.writeln(i)  
+        //     // }
+        //     document.writeln("<br>")
+        // }
+
+        /*
+        i  = 1
+        j => 1,2,3,4,5
+        print => (i) => 1 1 1 1 1
+        
+
+
+        */
+
+        /*
+          row => i =1
+          column=> j=1,2,3,4,5
+
+          row => i =2
+          column=> j=1,2,3,4,5
+
+           row => i =3
+          column=> j=1,2,3,4,5
+
+           row => i =4
+          column=> j=1,2,3,4,5
+
+           row => i =5
+          column=> j=1,2,3,4,5
+
+
+
+        */
+
+    </script>
+</body>
+</html>
