@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- 
+     let variable = {
+            key1:value1,
+            key2:value2,
+            key3:value3,
+            key4:value4
+     }
+    -->
+    <script>
+
+        // let names = ['a', 'ds', 'sd']
+        // console.log(names)
+        let student =  {
+            name: "Raja",
+            age: 25,
+            address: "trichy",
+            email: "raja@gmail.com",
+            phone: "+91-979879879",
+            fatherName: "siva",
+            busfees:2000,
+            otherfees:300,
+            tutionfees:30000,
+            fullName:function(){
+                return this.name+ this.fatherName;
+            },
+            Fees:function(){
+                return this.busfees+this.otherfees+this.tutionfees;
+            }
+        };
+
+        // old one
+        // let jj = new Object({
+        //     name: "Raja",
+        //     age: 25,
+        //     address: "trichy",
+        //     email: "raja@gmail.com",
+        //     phone: "+91-979879879",
+        //     fatherName: "siva"
+        // })
+
+        console.log(student)
+        console.log(student.fullName())
+        let fname =  student.fullName();
+        console.log(fname)
+        console.log(student.Fees())
+        //  2ways 
+        //dot notation or bracket notation
+        //access the object
+        // console.log(student.name)
+        // console.log(student.age)
+        // console.log(student.address)
+        // console.log(student.email)
+        // console.log(student.phone)
+
+        // console.log(student['name'])
+        // console.log(student['address'])
+        // console.log(student['email'])
+        // console.log(student['phone'])
+
+        //add 
+        student.motherName = "meena";
+
+        // update
+        student.name = "Kabilesh";
+
+        // delete
+        delete student.age
+
+        // console.log(student)
+
+
+    </script>
+</body>
+
+</html>
