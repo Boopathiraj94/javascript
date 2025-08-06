@@ -22,7 +22,7 @@
 
         // let names = ['a', 'ds', 'sd']
         // console.log(names)
-        let student =  {
+        let student = [{
             name: "Raja",
             age: 25,
             address: "trichy",
@@ -38,7 +38,24 @@
             Fees:function(){
                 return this.busfees+this.otherfees+this.tutionfees;
             }
-        };
+        },
+    {
+            name: "Raja",
+            age: 25,
+            address: "trichy",
+            email: "raja@gmail.com",
+            phone: "+91-979879879",
+            fatherName: "siva",
+            busfees:2000,
+            otherfees:300,
+            tutionfees:30000,
+            fullName:function(){
+                return this.name+ this.fatherName;
+            },
+            Fees:function(){
+                return this.busfees+this.otherfees+this.tutionfees;
+            }
+        }];
 
         // old one
         // let jj = new Object({

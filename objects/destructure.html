@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 
+     objects
+    
+     syntax:
+
+     let varialeName = {
+            key1:value1,
+            key2:value2,
+            key3:value3,
+            key4:value4,
+            key5:value5,
+     }
+
+     1. object literals
+     2. constructor
+    -->
+
+    <script>
+        // 
+
+        // let emp ={};
+
+        let employee = [{
+            name: "surendhar",
+            dob: "2002-5-1",
+            address: "trichy",
+            email: "surendhar@gmail.com",
+            phone: "+91-984654646",
+            salary: 500000,
+            pf: 2000,
+            role: "Automation Eng",
+            department: "Automation",
+
+            finalSalary:function(){
+                let f = this.salary +this.pf;
+                return f; 
+            },
+            depat:function(){
+                let dp = this.role.concat(this.department);
+                return dp;
+            }
+
+        },
+        {
+            name: "surendhar",
+            dob: "2002-5-1",
+            address: "trichy",
+            email: "surendhar@gmail.com",
+            phone: "+91-984654646",
+            salary: 500000,
+            pf: 2000,
+            role: "Automation Eng",
+            department: "Automation",
+
+            finalSalary:function(){
+                let f = this.salary +this.pf;
+                return f; 
+            },
+            depat:function(){
+                let dp = this.role.concat(this.department);
+                return dp;
+            }
+
+        }
+    ];
+
+    // array of objects
+
+    console.log(employee[1].email)
+
+        // console.log(employee.finalSalary())
+
+        // console.log(employee.depat())
+
+        //  access the object
+
+        //   1. dot notation 
+        //   2. bracket notation
+
+        // console.log(employee)
+        // console.log(employee['address'])
+        // console.log(employee['name'])
+        // console.log(employee.salary)
+        // console.log(employee.pf)
+        // console.log(employee.email)
+        // console.log(employee.phone)
+
+        // add the new key in object
+
+        employee.collegeName ="K.Ramakrishna clg";
+
+        // update the existing key in object
+
+        employee.phone = "+91-978687686"
+
+    //  delete 
+
+      delete employee.role
+
+
+
+
+
+
+
+        // let num = [10, 40, 607, 30, 66,10, 40, 607, 30, 66]
+        // console.log(num)
+
+        // console.log(num[0])
+        // let i = num[0]
+        // let j = num[1]
+        // let k = num[2]
+
+        // unpack
+        // let [a, b, c, d, e] = num;
+
+        // rest operator
+        // let [k,j,l,...rest] = num;
+
+        // console.log(k)
+        // console.log(j)
+        // console.log(rest)
+
+        // let [,,,,,n1] = num
+        // console.log(n1)
+
+
+        // console.log(a ,b,c)
+        // console.log(b)
+        // console.log(c)
+        // console.log(d)
+        // console.log(e)
+    </script>
+</body>
+
+</html>
