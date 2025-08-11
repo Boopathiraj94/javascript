@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <h1 id="name">Surendhar</h1>
+<p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste est officiis voluptates consequatur, maiores at magni? Deserunt recusandae, ex quam qui, enim, quia itaque temporibus dolor laboriosam optio commodi et?</p> -->
+
+
+
+
+    <!-- 
+    
+    Sytax:
+    document.getElementById("")
+    document.getElementsByTagName("")
+    docuement.getElementsByClassName("")
+    docuement.querySelector()
+    docuement.querySelectorAll()
+
+    Attribute
+    1. innerHTML
+    2. innerText
+    3. value
+    
+    -->
+    <div id="name2" >
+     <p>raja</p>
+    </div>
+
+    <input type="text" id="username" value="Dinakaran@123">
+    <p id="textLen">Length:0</p>
+    <!-- <input type="text" id="username" value="Surendhar"> -->
+
+    <!-- <input type="checkbox" value="tea">TEA -->
+    <script>
+
+// how to get input values using js
+       let uname =  document.getElementById("username")
+         let unameLen =    uname.value
+        //  console.log(unameLen.length)
+
+         document.getElementById("textLen").innerText = `Length: ${unameLen.length}`
+
+
+    //    console.log()
+    //    uname.value = "Iswarya"
+
+        // let n = document.getElementById("name2")
+        // console.log(n)
+        // n.innerText = "<span>Siva</span>"
+        // n.innerHTML = "<span>Siva</span>"
+
+        // if you want to add the html tags in javascript
+        // n.innerHTML = "<p><mark>Siva</mark</p>"
+
+        // debugger;
+       
+        // let n = document.getElementById("name")
+        // console.log(n)
+        // n.innerText = "Denis"
+        // n.innerText = "Kabilesh"
+        // n.innerText = "Dinakaran"
+        // n.innerText = "Raja"
+
+        // document.getElementById("para1").innerText  = "sdfkjsfhdk"
+
+
+
+    </script>
+</body>
+
+</html>
