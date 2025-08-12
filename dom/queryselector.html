@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    
+     document.querySelector()
+    -->
+
+    <h1>Denish</h1>
+
+    <h1 id="name">Kabilesh</h1>
+
+    <div class="para">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, doloribus! Adipisci eos tempora quasi soluta molestias nemo explicabo saepe! Vero, dolore. Alias assumenda expedita voluptatum laboriosam praesentium optio. Sit, tenetur.
+    </div>
+
+    <div>
+        <button>Click</button>
+    </div>
+
+    <section class="container">
+        <p>Lorem ipsum dolor sit amet1.</p>
+        <p>Lorem ipsum dolor sit amet2.</p>
+        <p id="para3">Lorem ipsum dolor sit amet3.</p>
+        <p>Lorem ipsum dolor sit amet4.</p>
+        <div class="box">
+             <h4>Dina</h4>
+        </div>
+    </section>
+    <style>
+        /* .container h4{
+            background-color: darkblue;
+            color: white;
+        } */
+    </style>
+
+  <script>
+
+   let n =    document.querySelector("h1")
+   console.log(n.innerHTML)
+   let name = document.querySelector("#name")
+   console.log(name.innerHTML)
+
+    let pa =   document.querySelector(".para")
+    console.log(pa.innerText)
+
+  let btn =   document.querySelector("div>button")
+  console.log(btn.innerText)
+
+    let para3 =    document.querySelector(".container h4")
+    console.log(para3.innerText)
+   para3.style.color = "red"
+   para3.style.backgroundColor = "blue"
+   
+
+  </script>
+</body>
+</html>
