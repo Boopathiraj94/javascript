@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- student Mark -->
+    <h1>Student Marks</h1>
+
+    <input type="number" id="tamil" class="focus" placeholder="Tamil Mark"> <br>
+    <input type="number" id="eng" class="focus" placeholder="English Mark"> <br>
+    <input type="number" id="maths" class="focus" placeholder="Maths Mark"> <br>
+    <input type="number" id="sci" class="focus" placeholder="science Mark"> <br>
+    <input type="number" id="ss" class="focus" placeholder="SS Mark"> <br>
+
+    <button onclick="getTotal()">Get Total</button>
+
+
+    <script>
+
+        //   get Total 
+
+        let getTotal = () => {
+            let tamil = document.getElementById("tamil").value;
+            console.log(tamil)
+            let eng = document.getElementById("eng").value;
+            let maths = document.getElementById("maths").value;
+            let sci = document.getElementById("sci").value;
+            let ss = document.getElementById("ss").value;
+
+            let ischeck = false;
+            if (tamil === "") {
+                alert("Empty tamil mark is not Allowed")
+                ischeck = false;
+            } else {
+                ischeck = true;
+            }
+
+            if (eng === "") {
+                alert("Empty Eng mark is not Allowed")
+                ischeck = false;
+            } else {
+                ischeck = true;
+            }
+
+            if (maths === "") {
+                alert("Empty tamil mark is not Allowed")
+                ischeck = false;
+            } else {
+                ischeck = true;
+            }
+
+            if (sci === "") {
+                alert("Empty Eng mark is not Allowed")
+                ischeck = false;
+            } else {
+                ischeck = true;
+            }
+
+            if (ss === "") {
+                alert("Empty Eng mark is not Allowed")
+                ischeck = false;
+            } else {
+                ischeck = true;
+            }
+
+
+            if (ischeck) {
+                let total = Number(tamil) + Number(eng) + Number(maths) + Number(sci) + Number(ss)
+
+                let para = document.createElement("p")
+                para.textContent = total
+                let body = document.querySelector("body")
+                body.append(para)
+            }
+
+
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>

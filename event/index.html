@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <h1></h1> -->
+
+    <button onclick="clickMe()">click</button>
+
+    <button ondblclick="dblClickMe()">DblClick</button>
+
+    <h2 style="border:2px solid;" onmouseenter="mouseEnter()" onmouseleave="mouseLeaveme()" onmousemove="mouseMove()">
+        Welcome</h2>
+
+
+    <input type="text" id="name" placeholder="username" onkeydown="keydownFun()" onkeyup="keyupfun()"> <br>
+
+    <input type="text" id="email" onfocus="focusFun()" onblur="focusout()" placeholder="Email">
+
+
+    <!-- 
+    onclick
+    ondblclick
+    mouse 
+    keydown,
+    
+    -->
+
+    <script>
+        let email = document.querySelector("#email")
+        function focusout() {
+            email.style.backgroundColor = "white"
+        }
+
+        //  focus 
+        function focusFun() {
+
+            email.style.backgroundColor = "teal"
+        }
+
+        function keyupfun() {
+            console.log("keyup....")
+        }
+
+
+        // keydown
+        let keydownFun = () => {
+            console.log("keydown....")
+        }
+
+
+
+        function clickMe() {
+            console.log("clicking!...")
+        }
+
+
+        function dblClickMe() {
+            console.log("double click ...")
+        }
+
+        let ele = document.querySelector("h2")
+        //  mouse Enter
+        function mouseEnter() {
+            ele.style.backgroundColor = "blue"
+            console.log("mouse Enter...")
+        }
+
+        function mouseLeaveme() {
+            ele.style.backgroundColor = "red"
+            console.log("mouse Leave...")
+        }
+
+        // mouseMove
+
+        function mouseMove() {
+            console.log("mouse Move..")
+        }
+
+    </script>
+</body>
+
+</html>
