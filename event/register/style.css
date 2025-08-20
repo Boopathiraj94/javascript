@@ -10,7 +10,7 @@ body {
     height: 100vh;
     display: grid;
     place-items: center;
-    background: linear-gradient(to left, #452171, #66d0c9cc);
+    background: linear-gradient(to left, #452171,#1f7588, #66d0c9cc);
 }
 
 /* form-control */
@@ -45,4 +45,10 @@ body {
 
 .register-form h1{
     text-align: center;
+}
+
+/* error color */
+.error{
+    color: red;
+    font-size: 18px;
 }

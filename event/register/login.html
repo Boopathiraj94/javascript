@@ -6,19 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register | Customer</title>
     <link rel="stylesheet" href="style.css">
-    <script src="register.js" async></script>
+    <!-- <script src="register.js" async></script> -->
 </head>
 
 <body>
 
     <form action="hsdf.html">
         <div class="register-form">
-            <h1>Registration Form</h1>
-            <section class="form-control">
-                <label for="">User Name</label>
-                <input type="text" id="uname" placeholder="Eg: Raja">
-                <span class="error" id="uerror"></span>
-            </section>
+            <h1>Login</h1>
             <section class="form-control">
                 <label for="">Email</label>
                 <input type="email" id="email">
@@ -30,19 +25,29 @@
                 <span class="error" id="perror"></span>
             </section>
             <section class="form-control">
-                <label for="">Confirm Password</label>
-                <input type="password" id="cpass">
-                <span class="error" id="cperror"></span>
+                <button type="submit" id="loginBtn">Submit</button>
             </section>
             <section class="form-control">
-                <button type="submit" id="submitBtn">Submit</button>
-            </section>
-            <section class="form-control">
-                <p>Already Register ? <a href="login.html">Login</a></p>
+                <p>New User ? <a href="register.html">Register</a></p>
             </section>
         </div>
     </form>
 
+    <script>
+        let loginBtn = document.querySelector("#loginBtn")
+
+        loginBtn.addEventListener("click", (e) => {
+            e.preventDefault()
+            let email = document.querySelector("#email").value;
+            let pass = document.querySelector("#pass").value;
+
+            if (email === "admin" && pass === "admin") {
+                window.location.href = "dashborad.html"
+            } else {
+                alert("invalid credentials")
+            }
+        })
+    </script>
 </body>
 
 </html>

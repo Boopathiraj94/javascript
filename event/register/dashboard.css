@@ -1,0 +1,38 @@
+:root {
+    --theme-bg-color: #008b8baa;
+    --theme-text-color: #d7a70bdc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+aside {
+    border: 2px solid;
+    width: 200px;
+    height: 100vh;
+    background: var(--theme-bg-color);
+    position: fixed;
+}
+
+aside>ul>li {
+    padding: 16px;
+    background: var(--theme-text-color);
+    margin: 10px 0;
+}
+
+aside>ul>li>a {
+    text-decoration: none;
+    color: var(--theme-bg-color);
+    font-size: 20px;
+}
+
+main { 
+    width: calc(100% - 200px);
+    border: 2px solid; 
+    position: absolute;
+    top: 50px;
+    left: 250px;
+}
