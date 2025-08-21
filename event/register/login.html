@@ -41,11 +41,25 @@
             let email = document.querySelector("#email").value;
             let pass = document.querySelector("#pass").value;
 
-            if (email === "admin" && pass === "admin") {
-                window.location.href = "dashborad.html"
-            } else {
-                alert("invalid credentials")
-            }
+            let customer =  JSON.parse(localStorage.getItem("customers"))
+            console.log("customer JSON: ",customer)
+
+          let isExist =   customer.filter((ele)=>ele.email === email && ele.password === pass)
+
+          console.log("isExist: ",isExist)
+
+          if(isExist.length == 1){
+            alert("Login Successfully")
+            window.location.href = "dashborad.html"
+          }else{
+            alert("You are not User , Please Register..")
+          }
+
+            // if (email === "admin" && pass === "admin") {
+            //     window.location.href = "dashborad.html"
+            // } else {
+            //     alert("invalid credentials")
+            // }
         })
     </script>
 </body>

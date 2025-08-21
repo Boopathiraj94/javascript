@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            border: 2px solid;
+            width: 200px;
+            height: 200px;
+           
+        }
+
+        @keyframes move {
+
+            from{
+                transform: translateX(200px);
+            }
+            
+        }
+
+        .bg-red {
+            background: navy;
+        }
+
+        .round {
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+             animation-name: move;
+            animation-duration: 3s;
+        }
+
+        .bg-gradient {
+            background: linear-gradient(blue, white);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- class list -->
+    <h1>Dynamically add / remove / toggle Class List</h1>
+    <!-- round bg-gradient -->
+    <section id="box" class="bg-red ">
+        1
+    </section>
+
+    <button id="getClassList">getClassList</button>
+
+    <button id="round">Add Round Class</button>
+
+    <button id="remove">remove Round class </button>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- change -->
+
+    <form action="" id="register-fm">
+        <input type="text" placeholder="username">
+        <input type="email" placeholder="email">
+        <select name="" id="change-bg">
+            <option value="red">red</option>
+            <option value="yellow">yellow</option>
+            <option value="pink">pink</option>
+            <option value="black">black</option>
+            <option value="navy">navy</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+
+
+    <script>
+
+//  resize
+
+   window.addEventListener("resize",()=>{
+    console.log("width: ",window.outerWidth);
+    console.log("height",window.outerHeight);
+
+    
+let boxClass = document.querySelector("#box")
+     if(window.outerWidth>600){
+        boxClass.classList.add("round")
+     }else{
+         boxClass.classList.remove("round")
+     }
+   })
+
+
+        let register_fm = document.querySelector("#register-fm")
+        register_fm.addEventListener("submit",(e)=>{
+            e.preventDefault()
+
+
+
+        })
+
+
+
+        let changebg = document.querySelector("#change-bg")
+
+        changebg.addEventListener("change", () => {
+            console.log(changebg.value)
+            let boxClass = document.querySelector("#box")
+            boxClass.style.backgroundColor = changebg.value
+        })
+
+
+        let getClassList = document.querySelector("#getClassList")
+        let boxClass = document.querySelector("#box")
+        getClassList.addEventListener("click", () => {
+
+            console.log(boxClass.classList)
+        })
+
+        // round 
+
+        let round = document.querySelector("#round")
+        round.addEventListener("click", () => {
+            boxClass.classList.add("round")
+        })
+
+        // remove 
+
+        let remove = document.querySelector("#remove")
+        remove.addEventListener("click", () => {
+            boxClass.classList.toggle("round")
+        })
+
+
+    </script>
+</body>
+
+</html>
