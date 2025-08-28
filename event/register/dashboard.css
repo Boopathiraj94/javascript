@@ -84,3 +84,19 @@ footer {
     display: none;
 }
 }
+
+
+/* table */
+.customer-table{
+    width: 100%;
+    font-size: 20px;
+}
+
+table,tr,th,td{
+    border:2px solid;
+    border-collapse: collapse;
+}
+
+tbody>tr>td{
+    text-align: center;
+}

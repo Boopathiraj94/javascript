@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        .card {
+            width: 300px;
+            /* height: 300px; */
+            border: 2px solid;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .card>img {
+            width: inherit;
+        }
+
+        .feature-bikes{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="feature-bikes">
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/51WRaOtap-L.jpg" alt="">
+            <p>Product1 </p>
+            <p>Rs. 100</p>
+            <button>Add To cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/51WRaOtap-L.jpg" alt="">
+            <p>Product1 </p>
+            <p>Rs. 100</p>
+            <button>Add To cart</button>
+        </div>
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/51WRaOtap-L.jpg" alt="">
+            <p>Product1 </p>
+            <p>Rs. 100</p>
+            <button>Add To cart</button>
+        </div>
+    </section>
+
+    <script>
+       let bikes =   [
+        {
+            productimage: 'https://m.media-amazon.com/images/I/51WRaOtap-L.jpg',
+            rate: 200000,
+            stock:10,
+            brand: 'Yamaha',
+            bikename: "R15"
+        },
+         {
+            productimage: 'https://cdn.bikedekho.com/processedimages/royal-enfield/roadstar/source/roadstar680f56320dc76.jpg',
+            rate: 300000,
+            stock:6,
+            brand: 'Royal emfield',
+            bikename: "Hunder"
+        },
+         {
+            productimage: 'https://krossbikes.in/cdn/shop/files/IMG_7101.png?v=1729588428',
+            rate: 20000,
+            stock:8,
+            brand: 'cycle',
+            bikename: "new cycle"
+        },
+         {
+            productimage: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBmdSsO66WhLrXdMsFiYYTDmK4rS4shPwI3g&s',
+            rate: 6000,
+            stock:9,
+            brand: 'Hero',
+            bikename: "splender"
+        }
+    ];
+
+    console.log("bikes", bikes)
+   let bike_container =   document.querySelector(".feature-bikes")
+
+    let productList=''
+
+    bikes.forEach((ele)=>{
+        productList+=` <div class="card">
+                            <img src="${ele.productimage}" alt="">
+                            <p>${ele.brand} -  ${ele.bikename}</p>
+                            <p>Rs. ${ele.rate}</p>
+                            <p>Stock ${ele.stock}
+                            <button>Add To cart</button>
+                        </div>`;
+
+    })
+bike_container.innerHTML = productList
+
+
+
+    </script>
+
+</body>
+
+</html>
