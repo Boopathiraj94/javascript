@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeout / SetInterval</title>
+
+    <style>
+        span {
+            font-size: 35px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>SetTimeout / SetInterval</h1>
+
+
+    <!-- 
+    •	setTimeout(function, milliseconds)
+Executes a function, after waiting a specified number of milliseconds.
+
+ setTimeout(()=>{
+    
+    },2000)
+    
+// let a = 5;
+
+        // setTimeout(() => {
+        //     console.log("Surendhar")
+        // }, 3000)
+
+        // console.log(a)
+
+
+•	setInterval(function, milliseconds)
+Same as setTimeout(), but repeats the execution of the function continuously.
+
+
+    use :
+    API => application programming interface
+
+    milliseconds => sec
+    1000ms => 1sec
+    2000ms => 2sec
+
+   
+
+    setInterval(()=>{
+    
+    },1000)
+    -->
+
+    <span id="hour">10</span>:
+    <span id="min">39</span>:
+    <span id="second">1</span>
+    <script>
+
+        // let a = 5;
+
+        // setTimeout(() => {
+        //     console.log("Surendhar")
+        // }, 3000)
+
+        // console.log(a)
+        // console.log(a)
+        // console.log(a)
+        // console.log(a)
+
+        setInterval(() => {
+            let d = new Date()
+            // console.log(d)
+
+            let h = d.getHours()
+            let m = d.getMinutes()
+            let s = d.getSeconds()
+
+            let hour = document.querySelector("#hour")
+            let min = document.querySelector("#min")
+            let second = document.querySelector("#second")
+
+            hour.innerHTML = h
+            min.innerHTML = m
+            second.innerHTML = s
+        }, 1000)
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
