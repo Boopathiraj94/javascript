@@ -3,8 +3,15 @@
 let submitBtn = document.querySelector("#submitBtn")
 
 // [{},{},{}]
+let alreadyCustomer = JSON.parse(localStorage.getItem("customers"))
+console.log(alreadyCustomer)
+let customers;
+if (alreadyCustomer.length >= 1) {
+    customers = alreadyCustomer
+}else{
+    customers = [];
+}
 
-let customers = [];
 const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 // register form submit
 submitBtn.addEventListener("click", (e) => {
@@ -80,7 +87,7 @@ submitBtn.addEventListener("click", (e) => {
             password: pass,
             confirmPass: cpass
         }
-
+        debugger;
         //  console.log("custObj=>",custObj)
 
         customers.push(custObj)
@@ -88,7 +95,9 @@ submitBtn.addEventListener("click", (e) => {
 
         localStorage.setItem("customers", JSON.stringify(customers))
         alert("Register Successfully")
-        document.querySelector("#uname").value = ""
+
+        let myform = document.querySelector("#myform")
+        myform.reset()
     }
 
 
