@@ -1,0 +1,49 @@
+.input-control {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.input-control>label,
+.input-control>input {
+    font-size: 20px;
+}
+
+.product-form {
+    width: 600px;
+    border: 2px solid blue;
+
+}
+
+.button-control {
+    padding: 15px;
+}
+button{
+    padding: 5px 10px;
+    border: 2px solid ;
+    border-radius: 20px;
+}
+button:hover{
+    background: darkgreen;
+}
+.product-form .submit-btn {
+    float: right;
+}
+
+/* product container */
+.product-container{
+    display: flex;
+    border: 5px solid green;
+    justify-content: space-between;
+    padding: 5px 3%;
+}
+
+/* table box */
+.table-box{
+    /* border: 3px solid blueviolet; */
+    width: 700px;
+}
+.table-box>table{
+    width: 100%;
+}

@@ -34,7 +34,7 @@ header {
 /* aside */
 aside {
     border: 2px solid;
-    /* background: darkgoldenrod; */
+    background: darkgoldenrod;
     grid-area: side;
 }
 
@@ -49,7 +49,7 @@ aside>ul>li {
 
 main {
     border: 2px solid blue;
-    background: darkkhaki;
+    /* background: darkkhaki; */
     grid-area: main;
     overflow: auto;
 }
