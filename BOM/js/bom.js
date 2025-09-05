@@ -7,10 +7,14 @@ let openWin = document.querySelector("#openWin")
 
 
 openWin.addEventListener("click", () => {
-    newWindow = window.open("", "myWindow", "width=300,height=400")
-    newWindow.document.writeln(`
-        <button onclick="print()">Print</button>
-        `)
+    console.log(window)
+   newWindow=  window.open("","Surendhar","width=200,height=200")
+    // newWindow = window.open("", "myWindow", "width=200,height=200")
+    // newWindow.document.writeln(`
+    //     <button onclick="print()">Print</button>
+    //     `)
+newWindow.document.writeln(`<button onclick="print()">Print</button>`)
+
 })
 
 // resize window
@@ -31,7 +35,7 @@ let moveWin = document.querySelector("#moveWin")
 
 moveWin.addEventListener("click", () => {
     if (newWindow) {
-        newWindow.moveTo(50,70)
+        newWindow.moveTo(500,170)
      } else {
         alert("Please open the window")
     }
